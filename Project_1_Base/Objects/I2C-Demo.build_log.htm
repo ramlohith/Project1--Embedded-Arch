@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ram Chavali, NC State, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.28.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.2.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.3.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.1.0
+ 
+<h2>Project:</h2>
+C:\Users\Admin\ESA-19-master (2)\ESA-19-master\Projects\Project_1\Project_1_Base\I2C-Demo.uvprojx
+Project File Date:  10/06/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling delay.c...
+compiling i2c_p1.c...
+Source\i2c_p1.c(89): warning:  #550-D: variable "dummy"  was set but never used
+        uint8_t dummy, num_bytes_read=0, is_last_read=0;
+Source\i2c_p1.c(151): warning:  #550-D: variable "dummy"  was set but never used
+  uint8_t dummy, num_bytes_read=0, is_last_read=0;
+Source\i2c_p1.c: 2 warnings, 0 errors
+compiling LEDs.c...
+compiling main.c...
+Source\main.c(62): warning:  #550-D: variable "dummy"  was set but never used
+        static uint8_t dummy, num_bytes_read=0, is_last_read=0;
+Source\main.c(209): warning:  #177-D: variable "data"  was declared but never referenced
+        uint8_t data[1];
+Source\main.c(210): warning:  #177-D: variable "dataxyz"  was declared but never referenced
+        static uint8_t dataxyz[6];
+Source\main.c(215): warning:  #550-D: variable "mma_faulty"  was set but never used
+        static int mma_faulty = 0;
+Source\main.c: 4 warnings, 0 errors
+compiling mma8451.c...
+compiling timers.c...
+compiling RTCS.c...
+RTCS\RTCS.c(25): warning:  #550-D: variable "returnval"  was set but never used
+        int returnval;
+RTCS\RTCS.c(56): warning:  #177-D: variable "returnval"  was declared but never referenced
+        int returnval;
+RTCS\RTCS.c: 2 warnings, 0 errors
+assembling startup_MKL25Z4.s...
+compiling system_MKL25Z4.c...
+linking...
+Program Size: Code=4108 RO-data=224 RW-data=52 ZI-data=596  
+".\Objects\I2C-Demo.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.5.1.pack
+                ARM.CMSIS.5.5.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.Kinetis_KLxx_DFP.1.13.0.pack
+                Keil.Kinetis_KLxx_DFP.1.13.0
+                NXP Kinetis KLxx Series Device Support and Examples
+   * Component: Startup Version: 2.5.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MKL25Z128xxx4
+  .\RTE\_Target_1
+  C:\Users\Admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\Users\Admin\AppData\Local\Arm\Packs\Keil\Kinetis_KLxx_DFP\1.13.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.2.0
+
+   * Component: Keil::Device:Startup:2.5.0
+      Source file:   Device\Source\ARM\startup_MKL25Z4.s
+      Source file:   Device\Source\system_MKL25Z4.c
+      Include file:  Device\Source\system_MKL25Z4.h
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
